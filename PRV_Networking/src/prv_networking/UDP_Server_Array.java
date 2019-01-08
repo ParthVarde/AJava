@@ -15,6 +15,13 @@ import java.util.*;
 public class UDP_Server_Array {
     public static void main(String[] args) throws Exception {
         DatagramSocket ds = new DatagramSocket(3331);
+        byte[] rd = new byte[1024];
+        byte[] sd = new byte[1024];
+        DatagramPacket dp = new DatagramPacket(rd, rd.length);
+        ds.receive(dp);
+        sd = dp.getData();
+        System.out.println("Array = " + sd);
         
+        ds.close();
     }
 }
