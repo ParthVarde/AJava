@@ -6,21 +6,15 @@
 package prv_networking;
 
 import java.net.*;
-import java.io.*;
+import java.util.*;
 
 /**
  *
  * @author parth
  */
-public class TCP_Client_IP {
+public class UDP_Server_Array {
     public static void main(String[] args) throws Exception {
-        Socket s = new Socket("localhost", 3332);
+        DatagramSocket ds = new DatagramSocket(3331);
         
-        InputStream is = s.getInputStream();
-        DataInputStream dis = new DataInputStream(is);
-        String str = dis.readUTF();
-        System.out.println("IP = " + str);
-        dis.close();
     }
-    
 }
