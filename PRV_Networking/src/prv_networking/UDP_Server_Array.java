@@ -19,8 +19,8 @@ public class UDP_Server_Array {
         byte[] sd = new byte[1024];
         DatagramPacket dp = new DatagramPacket(rd, rd.length);
         ds.receive(dp);
-        sd = dp.getData();
-        System.out.println("Array = " + sd);
+        rd = dp.getData();
+        System.out.println("Array = " + rd);
         
         ds.close();
     }
