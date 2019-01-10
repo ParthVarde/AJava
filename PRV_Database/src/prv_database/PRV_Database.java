@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class PRV_Database {
     public static void main(String[] args) throws SQLException,ClassNotFoundException {
-        String url = "jdbc:mysql://localhost:3306/";
+        String url = "jdbc:mysql://localhost:3306/test";
         Class.forName("com.mysql.jdbc.Driver");
         Connection conn;
         conn = DriverManager.getConnection(url, "root", "root");
@@ -17,5 +17,4 @@ public class PRV_Database {
             System.out.println("Connection Failed");
         }
     }
-    
 }
