@@ -13,10 +13,13 @@ public class PRV_CallableStmt_Demo {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter id to be searched = ");
         int id = sc.nextInt();
+        System.out.print("Enter name to be searched = ");
+        String name = sc.next();
         if(conn!=null)
         {
-            pstmt = conn.prepareStatement("CALL procedure1(?)");
+            pstmt = conn.prepareStatement("CALL procedure1(?,?)");
             pstmt.setInt(1,id);
+            pstmt.setString(2,name);
             ResultSet rs = pstmt.executeQuery();
             while(rs.next())
             {
