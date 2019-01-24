@@ -4,9 +4,25 @@
         <servlet-name>ServletDemo</servlet-name>
         <servlet-class>ServletDemo</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Area_Circle</servlet-name>
+        <servlet-class>Area_Circle</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LifeCycle</servlet-name>
+        <servlet-class>LifeCycle</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletDemo</servlet-name>
         <url-pattern>/ServletDemo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Area_Circle</servlet-name>
+        <url-pattern>/Area_Circle</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LifeCycle</servlet-name>
+        <url-pattern>/LifeCycle</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
