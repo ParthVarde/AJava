@@ -12,6 +12,14 @@
         <servlet-name>LifeCycle</servlet-name>
         <servlet-class>LifeCycle</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletContext_One</servlet-name>
+        <servlet-class>ServletContext_One</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletContext_Two</servlet-name>
+        <servlet-class>ServletContext_Two</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletDemo</servlet-name>
         <url-pattern>/ServletDemo</url-pattern>
@@ -23,6 +31,14 @@
     <servlet-mapping>
         <servlet-name>LifeCycle</servlet-name>
         <url-pattern>/LifeCycle</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletContext_One</servlet-name>
+        <url-pattern>/ServletContext_One</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletContext_Two</servlet-name>
+        <url-pattern>/ServletContext_Two</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

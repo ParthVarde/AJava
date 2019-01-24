@@ -13,6 +13,6 @@ public class LifeCycle extends HttpServlet {
     }
     public void destroy()
     {
-        System.out.println("Destroy -------------------------------------------------------------------------------------------");
+        System.out.println("Destroy ----------------------------------------------------------------------------------------");
     }
 }
