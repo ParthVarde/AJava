@@ -7,11 +7,7 @@ public class FilterDemo implements Filter {
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain f) throws ServletException, IOException {
         //PrintWriter out = res.getWriter();
         //out.println("Servlet not visible , Filter Visible");
-        String uname = req.getParameter("uname");
-        String pass = req.getParameter("pass");
-        if(uname.equals("admin") && pass.equals("admin")) {
-            f.doFilter(req, res);
-        }
+        f.doFilter(req, res);
     }
     public void destroy() {}
 }
