@@ -44,6 +44,10 @@
         <servlet-name>Servlet_url2</servlet-name>
         <servlet-class>Servlet_url2</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Student_JDBC</servlet-name>
+        <servlet-class>Student_JDBC</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletDemo</servlet-name>
         <url-pattern>/ServletDemo</url-pattern>
@@ -99,6 +103,10 @@
     <servlet-mapping>
         <servlet-name>Servlet_url2</servlet-name>
         <url-pattern>/Servlet_url2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Student_JDBC</servlet-name>
+        <url-pattern>/Student_JDBC</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
