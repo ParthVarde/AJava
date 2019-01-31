@@ -32,6 +32,18 @@
         <servlet-name>wel</servlet-name>
         <servlet-class>wel</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Session_Demo</servlet-name>
+        <servlet-class>Session_Demo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet_url</servlet-name>
+        <servlet-class>Servlet_url</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet_url2</servlet-name>
+        <servlet-class>Servlet_url2</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletDemo</servlet-name>
         <url-pattern>/ServletDemo</url-pattern>
@@ -76,6 +88,18 @@
         <filter-name>FilterDemo</filter-name>
         <url-pattern>/login</url-pattern>
     </filter-mapping>
+    <servlet-mapping>
+        <servlet-name>Session_Demo</servlet-name>
+        <url-pattern>/Session_Demo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet_url</servlet-name>
+        <url-pattern>/Servlet_url</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet_url2</servlet-name>
+        <url-pattern>/Servlet_url2</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
