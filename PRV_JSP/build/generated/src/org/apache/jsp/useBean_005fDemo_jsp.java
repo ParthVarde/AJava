@@ -41,9 +41,9 @@ public final class useBean_005fDemo_jsp extends org.apache.jasper.runtime.HttpJs
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <body>\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <body>\r\n");
       out.write("        ");
       p1.employee mybean = null;
       synchronized (_jspx_page_context) {
@@ -53,15 +53,15 @@ public final class useBean_005fDemo_jsp extends org.apache.jasper.runtime.HttpJs
           _jspx_page_context.setAttribute("mybean", mybean, PageContext.PAGE_SCOPE);
         }
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("            ");
       org.apache.jasper.runtime.JspRuntimeLibrary.introspecthelper(_jspx_page_context.findAttribute("mybean"), "id", "5", null, null, false);
-      out.write("\n");
+      out.write("\r\n");
       out.write("            ");
       out.write(org.apache.jasper.runtime.JspRuntimeLibrary.toString((((p1.employee)_jspx_page_context.findAttribute("mybean")).getid())));
-      out.write("\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
