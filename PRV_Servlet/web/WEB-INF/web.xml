@@ -48,6 +48,18 @@
         <servlet-name>Student_JDBC</servlet-name>
         <servlet-class>Student_JDBC</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Servlet_demo</servlet-name>
+        <servlet-class>Servlet_demo</servlet-class>
+    </servlet>
+    <filter>
+        <filter-name>FilterDemo</filter-name>
+        <filter-class>FilterDemo</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterDemo</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
     <servlet-mapping>
         <servlet-name>ServletDemo</servlet-name>
         <url-pattern>/ServletDemo</url-pattern>
@@ -107,6 +119,10 @@
     <servlet-mapping>
         <servlet-name>Student_JDBC</servlet-name>
         <url-pattern>/Student_JDBC</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet_demo</servlet-name>
+        <url-pattern>/Servlet_demo</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
